@@ -3,38 +3,38 @@ Metrics calculated using Diarization Metric in One repository
 
 Support DER, JER, CDER, SER and BER
 
-Usage with docker
-Run Docker image in order to test with existing audio file from Voxconverse
-'''docker pull avigyan/whisper_ecapa_tdnn'''
-'''docker run avigyan/whisper_ecapa_tdnn'''
+<h3>Usage with docker</h3> <br>
+Run Docker image in order to test with existing audio file from Voxconverse  <br>
+'''docker pull avigyan/whisper_ecapa_tdnn'''  <br>
+'''docker run avigyan/whisper_ecapa_tdnn'''  <br>
 
-In order to test using custom wav files perform the following:
+In order to test using custom wav files perform the following:  <br>
 
-'''1.Clone repository'''
-'''2.Add wav file and rttm in app folder'''
-'''3.Copy the location of the wav file in the path variable```
-Example:
-```path = "/content/usbgm.wav"``
-'''4.change reference rttm name in main.py'''
-'''5.Build new image or RUN'''
+'''1.Clone repository'''  <br> 
+'''2.Add wav file and rttm in app folder'''  <br>
+'''3.Copy the location of the wav file in the path variable```  <br>
+Example:  <br>
+```path = "/content/usbgm.wav"``  <br>
+'''4.change reference rttm name in main.py'''  <br>
+'''5.Build new image or RUN'''  <br>
 
-new image
+new image  <br>
 
-'''docker build -t whisper_ecapa_tdnn:tagname'''
+'''docker build -t whisper_ecapa_tdnn:tagname'''  <br>
 
-Run
+Run ****
+ 
+'''docker run whisper_ecapa_tdnn:tagname''' <br>
 
-'''docker run whisper_ecapa_tdnn:tagname'''
+<h3>Usage without docker(Linux environment required) </h3> <br>
 
-Usage without docker(Linux environment required)
-
-'''1.Clone repository'''
-'''2.Add wav file and rttm in app folder'''
-'''3.Copy the location of the wav file in the path variable```
-Example:
-```path = "/content/usbgm.wav"```
-'''4.change reference rttm name in main.py'''
-'''5.Move to app directory and install requirements.txt using ''pip install -r requirements.txt''' 5.run python main.py'''
+'''1.Clone repository'''  <br>
+'''2.Add wav file and rttm in app folder'''  <br>
+'''3.Copy the location of the wav file in the path variable```  <br>
+Example: <br>
+```path = "/content/usbgm.wav"```  <br>
+'''4.change reference rttm name in main.py'''  <br>
+'''5.Move to app directory and install requirements.txt using ''pip install -r requirements.txt''' 5.run python main.py'''  <br>
 
 
 Results:
