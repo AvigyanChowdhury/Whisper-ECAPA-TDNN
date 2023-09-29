@@ -5,42 +5,38 @@ Support DER, JER, CDER, SER and BER
 
 Usage with docker
 Run Docker image in order to test with existing audio file from Voxconverse
-docker pull avigyan/whisper_ecapa_tdnn
-docker run avigyan/whisper_ecapa_tdnn
+'''docker pull avigyan/whisper_ecapa_tdnn'''
+'''docker run avigyan/whisper_ecapa_tdnn'''
 
 In order to test using custom wav files perform the following:
 
-1.Clone repository
-2.Add wav file and rttm in app folder
-3.change wav file name in model.py
-4.change reference rttm name in main.py
-5.Build new image or RUN
+'''1.Clone repository'''
+'''2.Add wav file and rttm in app folder'''
+'''3.Copy the location of the wav file in the path variable```
+Example:
+```path = "/content/usbgm.wav"``
+'''4.change reference rttm name in main.py'''
+'''5.Build new image or RUN'''
 
 new image
 
 '''docker build -t whisper_ecapa_tdnn:tagname'''
-run
+
+Run
 
 '''docker run whisper_ecapa_tdnn:tagname'''
 
 Usage without docker(Linux environment required)
-1.Clone repository
-2.Add wav file and rttm in app folder
-3.```Copy the location of the wav file in the path variable```
+
+'''1.Clone repository'''
+'''2.Add wav file and rttm in app folder'''
+'''3.Copy the location of the wav file in the path variable```
 Example:
 ```path = "/content/usbgm.wav"```
-4.change reference rttm name in main.py
-5.Move to app directory and install requirements.txt using ''pip install -r requirements.txt''' 5.run python main.py
+'''4.change reference rttm name in main.py'''
+'''5.Move to app directory and install requirements.txt using ''pip install -r requirements.txt''' 5.run python main.py'''
 
-Results:
 
- collar    MS    FA    SC    OVL    DER    JER    CDER    SER    BER    ref_part    fa_dur    fa_seg    fa_mean
---------  ----  ----  ----  -----  -----  -----  ------  -----  -----  ----------  --------  --------  ---------
-(value)  (val) (val)  (val) (val) (val)  (value) (value) (val) (value)   (value)    (value)   (value)   (value)
-collar, MS, FA, SC, OVL, DER, JER is from the modified dscore URL, original is URL. OVL means errors occurring in overlapped speeches.
-CDER is from URL
-SER, BER, ref_part, fa_dur, fa_seg, fa_mean is from URL
-pyannote-audio is from URL
 Results:
 
   collar    MS    FA    SC    OVL    DER    JER    CDER    SER    BER    ref_part    fa_dur    fa_seg    fa_mean
