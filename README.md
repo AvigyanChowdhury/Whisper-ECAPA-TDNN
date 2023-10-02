@@ -35,7 +35,7 @@ Example: <br>
 ```path = "/content/usbgm.wav"```  <br>
 '''4.change reference rttm name in main.py'''  <br>
 '''5.Move to whisper_ecapa_tdnn directory and install requirements.txt using ''pip install -r requirements.txt''' <br>
-5.run python main.py'''  <br>
+'''6.run python main.py'''  <br>
 
 
 Results:
