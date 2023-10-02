@@ -10,13 +10,13 @@ Run Docker image in order to test with existing audio file from Voxconverse  <br
 
 In order to test using custom wav files perform the following:  <br>
 
-'''1.Clone repository'''  <br> 
-'''2.Add wav file and rttm in app folder'''  <br>
-'''3.Copy the location of the wav file in the path variable```  <br>
+1.Clone repository <br> 
+2.Add wav file and rttm in app folder <br>
+3.Copy the location of the wav file in the path variable <br>
 Example:  <br>
-```path = "/content/usbgm.wav"``  <br>
-'''4.change reference rttm name in main.py'''  <br>
-'''5.Build new image or RUN'''  <br>
+path = "/content/usbgm.wav" <br>
+4.change reference rttm name in main.py <br>
+5.Build new image or RUN  <br>
 
 new image  <br>
 
